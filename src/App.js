@@ -1,10 +1,13 @@
 import React from 'react'
-import ReceiptItem from './receipt-item'
+import ReceiptItem from './components/ReceiptItem'
+import Header from './components/Header'
+import User from './components/User'
 
 function App() {
   return (
-    <div className="App">
-      sdfsdfs
+    <section>
+      <Header />
+      <User />
       <ReceiptItem
         receipt={{
           id: 1,
@@ -23,7 +26,7 @@ function App() {
           name: 'Паста'
         }}
       />
-    </div>
+    </section>
   )
 }
 
